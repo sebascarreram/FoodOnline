@@ -31,8 +31,10 @@
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="pLQ-X6-Ncz"/>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="Rgu-uI-cN7"/>
+                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="PhX-lG-TsL"/>
                                             <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="dNP-FJ-xUc"/>
+                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="Rgu-uI-cN7"/>
+                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="xDd-Zu-uNB"/>
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YzW-HZ-6zh" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
