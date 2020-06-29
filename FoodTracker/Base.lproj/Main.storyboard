@@ -12,29 +12,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="Meal View Controller" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h7j-DR-AcT">
-                                <rect key="frame" x="10" y="108" width="394" height="414"/>
+                                <rect key="frame" x="10" y="76" width="394" height="414"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hQ-gl-QVp">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RMb-qz-oiA">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-CC-n6r">
                                         <rect key="frame" x="37" y="42" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="RMb-qz-oiA" secondAttribute="height" multiplier="1:1" id="2Lk-ng-CyH"/>
+                                            <constraint firstAttribute="width" secondItem="B0g-CC-n6r" secondAttribute="height" multiplier="1:1" id="cak-5c-zjG"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="pLQ-X6-Ncz"/>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="PhX-lG-TsL"/>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="dNP-FJ-xUc"/>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="Rgu-uI-cN7"/>
-                                            <outletCollection property="gestureRecognizers" destination="TF7-Qr-WJa" appends="YES" id="xDd-Zu-uNB"/>
+                                            <outletCollection property="gestureRecognizers" destination="gxW-ie-1VC" appends="YES" id="CdZ-46-ru4"/>
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YzW-HZ-6zh" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
@@ -69,16 +65,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="1hQ-gl-QVp" id="kFX-Hl-hvB"/>
-                        <outlet property="photoImageView" destination="RMb-qz-oiA" id="aK8-9a-ZaK"/>
+                        <outlet property="photoImageView" destination="B0g-CC-n6r" id="5BL-Pg-8t8"/>
                         <outlet property="ratingControl" destination="YzW-HZ-6zh" id="V0w-aC-6vK"/>
                         <outlet property="saveButton" destination="ypv-pO-i6Q" id="qRs-qs-RBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="Awb-1Q-VIl" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="TF7-Qr-WJa">
+                <tapGestureRecognizer id="gxW-ie-1VC">
                     <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="8gQ-hM-S51"/>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="7YP-17-oDa"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -176,11 +172,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXw-Og-HLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="670"/>
+            <point key="canvasLocation" x="1010" y="-200"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="In2-qh-GOJ"/>
+        <segue reference="Emf-ga-vjP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
